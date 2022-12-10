@@ -1,4 +1,4 @@
-# clinacheca Webapp
+# climacheca Webapp
 
 - Tecnologias utilizadas:
 
