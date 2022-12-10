@@ -1,0 +1,44 @@
+.feature-container
+  display: grid
+  grid-gap: 3rem
+
+.feature
+  @include rounded
+  background-color: white
+  box-shadow: 0px 0px 27px 3px rgba(11, 10, 43, 0.1)
+  // border: 4px solid $primary-color
+
+  &__header
+    padding: 3rem
+    display: flex
+    align-items: center
+
+    & > *:not(:last-child)
+      margin-right: 2.5rem
+
+  &__icon
+    height: 4.5rem
+    width: 4.5rem
+    border-radius: 50%
+    background: rgba(11, 10, 43, 0.1)
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $primary-color
+
+  &__title
+    font-weight: bold
+
+  &__fig
+    flex: 0 0 5.8rem
+    overflow: hidden
+
+  &__img
+    display: block
+    width: 100%
+    object-fit: cover
+    transition: all 0.3s
+
+  &__description
+    padding: 3rem
+    text-align: center

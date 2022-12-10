@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>climacheca</title>
+    <link rel="stylesheet" href="src/sass/main.sass" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <script src="src/js/app.js" charset="utf-8" type="module"></script>
+  </head>
+  <body>
+    <div class="app">
+      <section class="section section__search">
+        <main class="main">
+          <h1 class="logo">climacheca</h1>
+          <input type="text" class="input" placeholder="cidade" />
+          <button class="btn-search">encontrar</button>
+        </main>
+        <div class="spinner hidden"></div>
+      </section>
+      <section class="section section__info hidden">
+        <button class="btn-back"><i class="fas fa-angle-left"></i></button>
+
+        <div class="weather">
+          <figure class="weather__icon">
+            <img class="weather__img" src="src/assets/clouds.png" alt="" />
+          </figure>
+          <div class="weather_main">
+            <h1 class="weather__temperature">${data.temperature}°</h1>
+            <span class="weather__description">${climates[data.weather]}</span
+            ><br />
+            <span class="weather__city">${climates[data.weather]}</span>
+          </div>
+        </div>
+
+        <div class="weather__additional">
+          <div class="weather__info minTemp">
+            <i class="weather__info__icon fas fa-snowflake"></i>
+            <span class="weather__info--1"
+              >${data.additionals['minTemp']}°</span
+            >
+            <span class="weather__info--2">minima</span>
+          </div>
+          <div class="weather__info maxTemp">
+            <i class="weather__info__icon fas fa-sun"></i>
+            <span class="weather__info--1"
+              >${data.additionals['maxTemp']}°</span
+            >
+            <span class="weather__info--2">maxima</span>
+          </div>
+          <div class="weather__info feelsLike">
+            <i class="weather__info__icon fas fa-temperature-high"></i>
+            <span class="weather__info--1"
+              >${ data.additionals['feelsLike'] }°</span
+            >
+            <span class="weather__info--2">sensação</span>
+          </div>
+          <div class="weather__info visibility">
+            <i class="weather__info__icon fas fa-eye"></i>
+            <span class="weather__info--1"
+              >${ data.additionals['visibility'] }</span
+            >
+            <span class="weather__info--2">visibilidade</span>
+          </div>
+          <div class="weather__info wind">
+            <i class="weather__info__icon fas fa-wind"></i>
+            <span class="weather__info--1"
+              >${data.additionals['wind']}km/h</span
+            >
+            <span class="weather__info--2">vento</span>
+          </div>
+          <div class="weather__info humidity">
+            <i class="weather__info__icon fas fa-water"></i>
+            <span class="weather__info--1"
+              >${data.additionals['humidity']}</span
+            >
+            <span class="weather__info--2">humidade</span>
+          </div>
+        </div>
+        <div class="weather__additional--2">
+          <div class="weather__info">
+            <span class="weather__info--1">${data.sunrise}</span>
+            <span class="weather__info--2">nasce</span>
+          </div>
+          <div class="weather__info">
+            <span class="weather__info--1">${data.sunset}</span>
+            <span class="weather__info--2">se põe</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

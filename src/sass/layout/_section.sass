@@ -1,0 +1,33 @@
+.section
+  background-color: $primary-color
+  display: flex
+  flex-direction: column
+  flex: 1
+  transition: transform .5s, opacity 1s
+
+  &__search
+    align-items: center
+    justify-content: center
+
+  &__info
+    padding: 4rem
+    padding-top: 8rem
+    color: $primary-color
+    background-color: $secondary-color
+    position: absolute
+    height: 100%
+    width: 100%
+    z-index: -2
+
+    & > *:not(:last-child)
+      margin-bottom: $default-space
+
+
+.active
+  transform: translateX(0%)
+
+.hidden
+  opacity: 0
+
+.overlay
+  z-index: 2

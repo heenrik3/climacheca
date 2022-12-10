@@ -1,0 +1,20 @@
+{
+  "name": "climacheca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.1",
+    "@parcel/transformer-sass": "^2.8.1",
+    "@parcel/transformer-webmanifest": "^2.8.1"
+  }
+}

@@ -1,0 +1,61 @@
+.tags
+  align-self: center
+  width: 80%
+  color: $primary-color
+  font-size: 1.2rem
+  font-weight: bold
+  display: flex
+  align-items: center
+  transform: translateY(1rem)
+
+  & > *:not(:first-child)
+    // transform: translateX(-1rem)
+    margin-left: -1rem
+
+.tag
+  width: 10rem
+  height: 4rem
+  border-top-left-radius: 1rem
+  border-top-right-radius: 1rem
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.55))
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: transform .5s
+
+  &__active
+    transform: translateY(-.9rem)
+    z-index: 3
+
+  &--1
+    background-color: $tag--1
+  &--2
+    background-color: $tag--2
+  &--3
+    background-color: $tag--3
+
+.tabbed
+  padding: 3rem
+  color: $primary-color
+  flex-direction: column
+  align-items: center
+  align-self: center
+  @include rounded
+  background-color: $tertiary-color
+  z-index: 2
+
+  &__header
+    display: flex
+    margin-bottom: 2rem
+
+    & .tabbed__title
+      margin-left:  2rem
+
+  &__icon
+    min-width: 5rem
+    border-radius: 50%
+    background-color: lightblue
+
+  &__title
+    font-weight: bold
+    text-align: center
