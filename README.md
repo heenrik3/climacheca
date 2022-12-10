@@ -14,6 +14,6 @@
 
 - API pública
 
-[Acesse Aqui](https://climacheca.netlify.app/)
+[Acesse Aqui](https://climacheca.vercel.app/)
 
 ![!preview img](https://i.imgur.com/iB0J7oz.png)
