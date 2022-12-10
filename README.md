@@ -8,7 +8,6 @@
 - CSS
 - SASS
 - Javascript
-- React
 
 ### Back-End
 
